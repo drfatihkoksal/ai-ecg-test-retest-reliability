@@ -1,0 +1,11 @@
+# Separate venv for the Ribeiro et al. model (no torch).
+tensorflow==2.21.0
+tf-keras==2.21.0
+numpy
+pandas
+pyarrow
+scipy
+wfdb
+h5py
+duckdb==1.5.6
+scikit-learn==1.9.1

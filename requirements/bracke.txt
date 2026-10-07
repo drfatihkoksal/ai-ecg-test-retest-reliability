@@ -1,0 +1,13 @@
+# Separate venv for the Bracke et al. model, created with --system-site-packages on top of main.txt.
+# mamba-ssm is installed WITHOUT its CUDA extensions:
+#   MAMBA_SKIP_CUDA_BUILD=TRUE CAUSAL_CONV1D_SKIP_CUDA_BUILD=TRUE \
+#     pip install --no-deps --no-build-isolation mamba-ssm==2.3.2.post1
+# and an empty stub module `selective_scan_cuda.py` is placed in site-packages
+# (Mamba2 does not use it). reliability_bracke.py runs Mamba2 with use_mem_eff_path=False.
+mamba-ssm==2.3.2.post1
+einops==0.8.2
+triton==3.6.0
+wheel
+setuptools
+packaging
+ninja
